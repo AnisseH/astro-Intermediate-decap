@@ -126,8 +126,8 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
   <!-- ============================================ -->
   <section id="reviews">
     <div class="cs-container">
-      <h2 class="cs-title">Notre clientèle</h2>
-      <span>One Tech Beyond sert depuis 1999 deux catégories de clients</span>
+      <h2 class="cs-title">Notre <span class="accent">clientèle</span></h2>
+      <span class="cs-text">One Tech Beyond sert depuis 1999 deux catégories de clients</span>
     </div>
   </section>
   <section id="sbs">
@@ -697,6 +697,11 @@ const optimizedImage = await getImage({src: landingImage, format: 'avif'})
       .cs-title {
         text-align: left;
         max-width: (800/16rem);
+      }
+
+      .cs-head {
+        text-align: center;
+        margin-top: 3rem;
       }
 
       .cs-text {
